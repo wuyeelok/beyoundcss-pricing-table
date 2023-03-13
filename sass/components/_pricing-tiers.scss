@@ -23,19 +23,9 @@
       content: "";
       display: block;
       height: 1px;
-      margin-block: $size-20;
-      background-color: $color-neutral-900;
+      margin-block: size(20);
+      background-color: clr("neutral", 900);
       opacity: 0.2;
-    }
-  }
-
-  &__price {
-    font-size: $fs-800;
-    font-weight: $fw-700;
-
-    span {
-      font-weight: $fw-400;
-      font-size: $fs-600;
     }
   }
 }
