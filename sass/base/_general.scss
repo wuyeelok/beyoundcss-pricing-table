@@ -1,21 +1,17 @@
+@use "../abstracts/" as *;
+
 body {
   font: {
-    size: $fs-400;
+    size: fs(400);
     weight: $fw-400;
     family: $ff-sans;
   }
 
-  color: $color-neutral-900;
+  color: clr("neutral", 900);
 
   background: {
-    color: $color-neutral-100;
+    color: clr("neutral", 100);
   }
 
   text-align: center;
-}
-
-.page-title {
-  color: $color-primary-400;
-  font-size: $fs-900;
-  margin-block: $size-32;
 }
