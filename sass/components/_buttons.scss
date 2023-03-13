@@ -11,7 +11,7 @@
 
   justify-self: center;
 
-  .bg-primary-400 & {
+  &[data-type="inverted"] {
     color: clr(primary, 400);
     background-color: clr(neutral, 100);
   }
