@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .pricing-plans {
-  border: fs(8) solid clr("primary", 400);
+  border: size(8) solid clr("primary", 400);
   display: flex;
 }
 

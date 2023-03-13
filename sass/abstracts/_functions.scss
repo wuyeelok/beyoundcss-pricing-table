@@ -7,7 +7,7 @@
   @if map.has-key($colors, $color, $shade) {
     @return map.get($colors, $color, $shade);
   } @else {
-    @error '$colors does not hat that color: #{$color}!';
+    @error '$colors does not have that color: #{$color}!';
   }
 }
 
@@ -15,7 +15,7 @@
   @if map.has-key($font-sizes, $font-size) {
     @return map.get($font-sizes, $font-size);
   } @else {
-    @error '$font-size does not hat that color: #{$font-size}!';
+    @error '$font-size does not have that color: #{$font-size}!';
   }
 }
 
@@ -23,6 +23,6 @@
   @if map.has-key($sizes, $size) {
     @return map.get($sizes, $size);
   } @else {
-    @error '$size does not hat that color: #{$size}!';
+    @error '$size does not have that color: #{$size}!';
   }
 }
