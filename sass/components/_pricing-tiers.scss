@@ -1,0 +1,48 @@
+@use "../abstracts/" as *;
+
+.pricing-plans {
+  border: $size-8 solid $color-primary-400;
+  display: flex;
+}
+
+.tier {
+  flex: 1;
+  padding: $size-36;
+  display: grid;
+  gap: $size-20;
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: $fw-700;
+    color: $color-primary-400;
+
+    .inverted & {
+      color: $color-neutral-100;
+    }
+  }
+
+  &__feature-list {
+    list-style: none;
+  }
+
+  &__list-item {
+    &:not(:last-child)::after {
+      content: "";
+      display: block;
+      height: 1px;
+      margin-block: $size-20;
+      background-color: $color-neutral-900;
+      opacity: 0.2;
+    }
+  }
+
+  &__price {
+    font-size: $fs-800;
+    font-weight: $fw-700;
+
+    span {
+      font-weight: $fw-400;
+      font-size: $fs-600;
+    }
+  }
+}
