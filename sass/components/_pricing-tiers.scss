@@ -1,24 +1,17 @@
 @use "../abstracts/" as *;
 
 .pricing-plans {
-  border: $size-8 solid $color-primary-400;
+  border: fs(8) solid clr("primary", 400);
   display: flex;
 }
 
 .tier {
   flex: 1;
-  padding: $size-36;
   display: grid;
-  gap: $size-20;
+  gap: size(20);
 
   &__title {
     text-transform: uppercase;
-    font-weight: $fw-700;
-    color: $color-primary-400;
-
-    .inverted & {
-      color: $color-neutral-100;
-    }
   }
 
   &__feature-list {
